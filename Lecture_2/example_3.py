@@ -1,5 +1,0 @@
-print(bool(0))
-print(bool(""))
-print(bool(None))
-print(bool([[]]))
-print(bool(1))
