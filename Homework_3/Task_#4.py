@@ -3,17 +3,15 @@ def encrypt(text):
     result = ""
 
     for ch in text:
-        if ch.islower():  # მხოლოდ დაბალი რეგისტრის ასოები
+        if ch.islower():  # ეხება მხოლოდ დაბალ სიმბოლოებს
             for row in keyboard:
                 if ch in row:
                     i = row.index(ch)
-                    result += row[(i + 1) % len(row)]  # მარჯვნივ წანაცვლება
+                    result += row[(i + 1) % len(row)]  # ანაცვლებს ამრჯვნივ
                     break
         else:
-            result += ch  # სხვა სიმბოლო უცვლელად
+            result += ch  # დანარჩენი სიმბობლოები გადმოაქვს უცვლელად
     return result
-
-
 def decrypt(text):
     keyboard = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
     result = ""
@@ -23,19 +21,17 @@ def decrypt(text):
             for row in keyboard:
                 if ch in row:
                     i = row.index(ch)
-                    result += row[(i - 1) % len(row)]  # მარცხნივ წანაცვლება
+                    result += row[(i - 1) % len(row)]  # ეს ფუნქცია ანაცვლებს მარცხნივ
                     break
         else:
             result += ch
     return result
-
-
-# მთავარი პროგრამა
+# მთრავარი პროგრამა While ციკლში
 while True:
     action = input("Enter action (e/d): ").strip().lower()
     if action in ("e", "d"):
         break
-    print("Invalid input! Please enter 'e' for encrypt or 'd' for decrypt.")
+    print("Please enter e or d")
 
 text = input("Enter text: ")
 
