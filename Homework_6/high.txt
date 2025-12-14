@@ -1,0 +1,3 @@
+Giorgi,televizori,1,500
+Dato,kompiuteri,5,3
+Miriani,atomi,2,15

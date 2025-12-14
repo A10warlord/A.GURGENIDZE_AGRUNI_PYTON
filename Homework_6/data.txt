@@ -1,0 +1,5 @@
+Ana,zgarbi,2,3
+Giorgi,televizori,1,500
+Dato,kompiuteri,5,3
+Nino,kalami,10,0.8
+Miriani,atomi,2,15
