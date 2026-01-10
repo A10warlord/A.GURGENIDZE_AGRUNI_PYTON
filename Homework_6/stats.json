@@ -1,0 +1,22 @@
+{
+    "max_single_purchase_amount": {
+        "amount": 10,
+        "users": [
+            "Nino"
+        ]
+    },
+    "max_total_purchase_cost": {
+        "cost": 500.0,
+        "users": [
+            "Giorgi"
+        ]
+    },
+    "average_purchase_cost": 111.8,
+    "average_purchase_amount": 4.0,
+    "top_selling_products": {
+        "amount": 10,
+        "products": [
+            "kalami"
+        ]
+    }
+}
